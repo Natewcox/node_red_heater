@@ -24,6 +24,10 @@ DHT11 or 22 Temp and Humidity Sensor
 5v 30a Relay
 Wire
 
+### Wiring
+
+* future drawing
+
 ### Installing
 
 * Flash the latest Raspberry Pi imiage to the SDCard
@@ -50,7 +54,7 @@ hostname -I
 ```
 npm install node-red-contrib-homekit-bridged
 ```
-Also add contrib-dht-sensor
+* Also add contrib-dht-sensor
 ```
 npm install node-red-contrib-dht-sensor
 ```
@@ -63,8 +67,6 @@ Access Node-Red again and select import and copy and past
 ```
 
 ```
-
-### Executing program
 
 
 ## Help
