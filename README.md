@@ -29,37 +29,53 @@ Wire
 * Flash the latest Raspberry Pi imiage to the SDCard
 * Install the DHT sensor and relay.
 * Add drawing
-Turn on the Raspberry and perform the initial startup. Network is a must.
-Install Node-Red per Nodered.org The recommended software has Node-Red but is missing a few parts. Use the full install to insure you have everything.
-Fallow the instruction so Node-Red starts at boot.
-If you plan to communicate between Pis, I recommend Mosquitto. https://mosquitto.org/blog/2013/01/mosquitto-debian-repository/
-Once Node-red is running, access it through any web browser on the same wifi using -the.ip.add:1880
-In the dropdown, Click Manage Pallets to add the node contrib-homekit-bridged or in terminal
+* Turn on the Raspberry and perform the initial startup. Network is a must.
+* Install Node-Red per Nodered.org The recommended software has Node-Red but is missing a few parts. Use the full install to insure you have everything.
+```
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+```
+*Turn on Node-Red start at boot.
+```
+sudo systemctl enable nodered.service
+```
+* If you plan to communicate between Pis, I recommend Mosquitto.
+* https://mosquitto.org/blog/2013/01/mosquitto-debian-repository/
+* Locate your IP address.
+```
+hostname -I
+```
+### Node-Red
+* Once Node-red is running, access it through any web browser on the same wifi using the.ip.add:1880
+* In the dropdown, Click Manage Pallets to add the node contrib-homekit-bridged or in terminal
+```
 npm install node-red-contrib-homekit-bridged
+```
 Also add contrib-dht-sensor
+```
 npm install node-red-contrib-dht-sensor
-A library is required to control the DHT sensor found here. http://www.airspayce.com/mikem/bcm2835/
-Reboot
-Import the JSON code in the file Import.
+```
+* A library is required to control the DHT sensor found here. http://www.airspayce.com/mikem/bcm2835/
+* Reboot
+```
+sudo reboot
+```
+Access Node-Red again and select import and copy and past
+```
+
+```
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+This is best to be used as an example. I tried to use a mixture of change nodes and function nodes to provide different ways to change the msg.payload
 
 ## Authors
 
-Contributors names and contact info
+Preston - Testing
 
 
 ## Version History
+
+0.1 - Ruff draft
