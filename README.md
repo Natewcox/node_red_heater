@@ -1,18 +1,34 @@
 # node_red_heater
+
+
+
+# Project Goal
+
 Using Node-Red to control a heater to connect to Apple Homekit
-![image](https://user-images.githubusercontent.com/97216517/148344058-215eebcf-89ab-4d1f-bc3b-b1bbfe6c1695.jpeg)
+
+## Description
+
 I use HomeKit for my home automations and I am wanted to share how I use Node-Red to add each element. This first repository is my main hub and my porch heater. Not every user has Apple devices so I use this Raspberry as a dashboard to control the heater and a button to tell my Garage Door Raspberry to open.
-Materials:
+
+## Getting Started
+
+
+![image](https://user-images.githubusercontent.com/97216517/148344058-215eebcf-89ab-4d1f-bc3b-b1bbfe6c1695.jpeg)
+
+
+### Dependencies
+
 Raspberry Pi
 SD Card
 DHT11 or 22 Temp and Humidity Sensor
 5v 30a Relay
-wire
+Wire
 
-Setup
-Flash the latest Raspberry Pi imiage to the SDCard
-Install the DHT sensor and relay.
-*Add drawing
+### Installing
+
+* Flash the latest Raspberry Pi imiage to the SDCard
+* Install the DHT sensor and relay.
+* Add drawing
 Turn on the Raspberry and perform the initial startup. Network is a must.
 Install Node-Red per Nodered.org The recommended software has Node-Red but is missing a few parts. Use the full install to insure you have everything.
 Fallow the instruction so Node-Red starts at boot.
@@ -25,26 +41,6 @@ npm install node-red-contrib-dht-sensor
 A library is required to control the DHT sensor found here. http://www.airspayce.com/mikem/bcm2835/
 Reboot
 Import the JSON code in the file Import.
-
-# Project Title
-
-Simple overview of use/purpose.
-
-## Description
-
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
 
 ### Executing program
 
