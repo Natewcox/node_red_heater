@@ -1,9 +1,5 @@
 # node_red_heater
 
-
-
-# Project Goal
-
 Using Node-Red to control a heater to connect to Apple Homekit
 
 ## Description
@@ -26,7 +22,7 @@ Wire
 
 ### Wiring
 
-* future drawing
+![image](https://user-images.githubusercontent.com/97216517/148473859-1b3ecf92-2f21-41be-9374-aacceda0c65e.jpeg)
 
 ### Installing
 
