@@ -26,11 +26,11 @@ I use HomeKit for my home automations and I am wanted to share how I use Node-Re
 
 ### INSTALLS
 
-* Fallow the directions at [RaspberryPi.org](https://www.raspberrypi.org) to:
-  1. Flash the latest Raspberry Pi imiage to the SDCard
-  2. Perform initial startup. Network and Update is a must.
-
-* Install Node-Red. The recommended software for the Raspberry includes Node-Red but is missing a few parts. Use the full install to have all files and updates.
+Fallow the directions at [RaspberryPi.org](https://www.raspberrypi.org) to:
+  * Flash the latest Raspberry Pi imiage to the SDCard
+  * Perform initial startup. Network and Update is a must.
+***
+Install Node-Red. The recommended software for the Raspberry includes Node-Red but is missing a few parts. Use the full install to have all files and updates.
 
 ```
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
@@ -43,7 +43,7 @@ sudo systemctl enable nodered.service
 ```
 If you plan to communicate between Pis, I recommend Mosquitto.
   * https://mosquitto.org/blog/2013/01/mosquitto-debian-repository/
-
+***
 Locate your IP address.
 
 ```
@@ -52,10 +52,9 @@ hostname -I
 
 ### Node-Red
 
-* Once Node-red is running, access it through any web browser on the same wifi using the.ip.add:1880
+Once Node-red is running, access it through any web browser on the same wifi using the.ip.add:1880
   - If you wish the dash board nodes to work correctly, that Pallet must be added. Details will be added soon.
-  - 
-
+***
 In the dropdown, Click Manage Pallets to add the node contrib-homekit-bridged or in terminal
 
 ```
